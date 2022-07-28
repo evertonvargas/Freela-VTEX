@@ -1,0 +1,29 @@
+.sectionWhats {
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+
+	a {
+		position: fixed;
+		right: 50px;
+		bottom: 50px;
+
+		img {
+			width: 60px;
+		}
+	}
+}
+
+@media (max-width: 820px) {
+	.sectionWhats {
+		a {
+			position: fixed;
+			right: 20px;
+			bottom: 30px;
+
+			img {
+				width: 50px;
+			}
+		}
+	}
+}
