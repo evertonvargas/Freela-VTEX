@@ -8,7 +8,7 @@ export function Cards(){
         <div key={index}>
           <div className={styles.title}>
             <h2>{item.title}</h2>
-            <img src={item.img} alt={item.img} />
+            <img src={item.img} alt={item.title} />
           </div>
         <ul>
         {item.list.map((element,index) => (

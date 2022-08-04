@@ -87,7 +87,7 @@ export function Form({anchor}:FormProps) {
         <>
           <article>
             <h2>Contato</h2>
-            <img src="contact.svg" />
+            <img src="contact.svg" alt="imagem de contato"/>
           </article>
           <p>
             Estamos prontos para te atender, conversar e entender suas
@@ -96,10 +96,11 @@ export function Form({anchor}:FormProps) {
           <p>Somos o time que levará a sua operação para outro nível</p>
 
           <form ref={form} onSubmit={handleSubmit} className={styles.form}>
-            <label>
+            <label htmlFor="name">
               Nome<span>*</span>
             </label>
             <input
+              id="name"
               name="name"
               type="text"
               value={values.name}
@@ -112,10 +113,11 @@ export function Form({anchor}:FormProps) {
             {touched.name && errors.name ? (
               <div className={styles.error}>{errors.name}</div>
             ) : null}
-            <label>
+            <label htmlFor="email">
               E-mail<span>*</span>
             </label>
             <input
+              id="email"
               name="email"
               type="e-mail"
               value={values.email}
@@ -128,17 +130,19 @@ export function Form({anchor}:FormProps) {
             {touched.email && errors.email ? (
               <div className={styles.error}>{errors.email}</div>
             ) : null}
-            <label>URL do Site</label>
+            <label htmlFor="urlSite">URL do Site</label>
             <input
+              id="urlSite"
               name="urlSite"
               value={values.urlSite}
               onChange={handleChange}
               onBlur={handleBlur}
             />
-            <label>
+            <label htmlFor="mensage">
               Mensagem<span>*</span>
             </label>
             <textarea
+              id="mensage"
               rows={8}
               name="mensage"
               value={values.mensage}
