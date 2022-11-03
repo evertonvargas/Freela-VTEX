@@ -3,8 +3,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Typed from "react-typed";
 
-import { Cards } from "../components/Cards"
-import { Whatsapp } from "../components/Whatsapp/whatsapp"
+import { Cards } from "../components/Cards";
+import { Whatsapp } from "../components/Whatsapp/whatsapp";
 import { Form } from "../components/Form/Form";
 
 import styles from "../styles/Home.module.scss";
@@ -16,17 +16,15 @@ const Home: NextPage = () => {
     setCount(1);
   }, [count]);
 
-  useEffect(()=>{
-    if(window.location.hash!=="") window.location.href="/"
-  },[])
+  useEffect(() => {
+    if (window.location.hash !== "") window.location.href = "/";
+  }, []);
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Freela VTEX</title>
-        <meta name="description" content="Freelancer VTEX - VTEX IO e Legacy" />
+        <title>Freelancer VTEX</title>
       </Head>
-      
       <header>
         <nav>
           <div>
@@ -70,7 +68,7 @@ const Home: NextPage = () => {
             </div>
           </footer>
         </section>
-        <Form anchor="contato"/>
+        <Form anchor="contato" />
       </main>
 
       <Whatsapp />
