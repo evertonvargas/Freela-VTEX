@@ -1,7 +1,5 @@
 import Image from "next/image";
-
 import { Card } from "../../static/methodology";
-
 import styles from "./styles.module.scss";
 
 export function Card({ title, img, text1, text2, text3 }: Card) {
