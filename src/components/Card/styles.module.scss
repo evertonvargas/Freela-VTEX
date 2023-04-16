@@ -1,0 +1,48 @@
+.card{
+  max-width: 330px;
+  padding: 3.0rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #cecece;
+  width: 100%;
+
+  >div{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    height: 5rem;
+
+    >h2{
+      color: #000;
+      font-family: 'Open Sans';
+      font-weight: 700;
+      font-size: 3.0rem;
+    }
+
+    &::after{
+      content: '';
+      height: 2px;
+      width: 93px;
+      background-image: linear-gradient(45deg, #FFB100, #EB455F);
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  >ul{
+    margin-left: 2.1rem;
+    margin-top: 2.4rem;
+
+    li{
+      font-family: 'Open sans';
+      font-weight: 300;
+      font-size: 1.8rem;
+      color: #000;
+      list-style-type: disc;
+
+      &:not(:last-child){
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
