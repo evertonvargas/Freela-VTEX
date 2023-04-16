@@ -2,6 +2,7 @@
   .methodology {
     margin-top: 550px;
     margin-bottom: 8rem;
+    padding: 0 1.5rem;
 
     > h2 {
       color: #000;
@@ -35,7 +36,8 @@
       display: flex;
       justify-content: center;
       gap: 4rem;
-      margin-top: 4rem;
+      margin: 4rem auto 0;
+      flex-wrap: wrap;
     }
   }
 }

@@ -1,9 +1,8 @@
 .card{
-  max-width: 330px;
   padding: 3.0rem 2rem;
   border-radius: 8px;
   border: 1px solid #cecece;
-  width: 100%;
+  width: 330px;
 
   &:hover{
     cursor: pointer;
@@ -46,6 +45,7 @@
       font-size: 1.8rem;
       color: #000;
       list-style-type: disc;
+      white-space: nowrap;
 
       &:not(:last-child){
         margin-bottom: 8px;
