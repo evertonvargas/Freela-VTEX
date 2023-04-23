@@ -10,6 +10,9 @@ import { CompanyCard } from "../components/CompanyCard";
 import { ButtonsContact } from "../components/ButtonsContact";
 import { skillsList } from "../static/skillsList";
 import { SkillCard } from "../components/SkillCard";
+import Image from "next/image";
+import { mainCompaniesList } from "../static/mainCompaniesList";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +20,35 @@ const Home: NextPage = () => {
       <Head>
         <title>Freelancer VTEX</title>
       </Head>
+      <section className={styles.introduction}>
+        <div>
+          <div className={styles.content}>
+            <h1>VTEX IO e FastStore com qualidade e rapidez</h1>
+            <h3>
+              Somos um time qualificado para
+              <br /> levar o seu negócio para o próximo level
+            </h3>
+            <p>
+              Migração de Legacy para VTEX IO, integrações, aplicações no Master
+              Data, implementação de layouts, manutenção, evolução da loja,
+              técnicas avançadas de SEO e usabilidade.
+            </p>
+            <ButtonsContact isColorWhite={true} />
+          </div>
+          <img
+            className={styles.developer}
+            src="/developer.svg"
+            alt="Desenvolvedor"
+          />
+          <div className={styles.mainCompanies}>
+            {mainCompaniesList.map(({ imgUrl, alt, url }) => (
+              <Link href={url} key={alt}>
+                <img src={imgUrl} alt={alt} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className={styles.methodology}>
         <h2 className={styles.titleSection}>
           Nossa metodologia de <span>trabalho</span>

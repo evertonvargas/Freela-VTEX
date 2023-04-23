@@ -15,7 +15,7 @@ export const Header = () => {
             src="/logo-vtex-freela.svg"
             alt="Logo"
             width={240}
-            height={40}
+            height={48}
           />
         </section>
         <section className={styles.menu}>

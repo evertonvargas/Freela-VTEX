@@ -5,8 +5,8 @@ const nextConfig = {
   publicRuntimeConfig: {
     YOUR_SERVICE_ID: process.env.YOUR_SERVICE_ID,
     YOUR_TEMPLATE_ID: process.env.YOUR_TEMPLATE_ID,
-    YOUR_PUBLIC_KEY: process.env.YOUR_PUBLIC_KEY
-  }
-}
+    YOUR_PUBLIC_KEY: process.env.YOUR_PUBLIC_KEY,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

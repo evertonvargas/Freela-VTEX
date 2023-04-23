@@ -2,7 +2,7 @@
   background: transparent;
   border: none;
 
-  @media screen and (min-width: 841px) {
+  @media screen and (min-width: 840px) {
     display: none;
   }
 
@@ -24,5 +24,13 @@
     font-size: 1.5rem;
     line-height: 22px;
     color: #FFFFFF;
+  }
+}
+
+@media (max-width: 840px){
+  .container{
+    li{
+      color: #000;
+    }
   }
 }
