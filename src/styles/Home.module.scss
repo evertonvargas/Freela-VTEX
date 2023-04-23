@@ -32,7 +32,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    animation: Home_bg-animation__87LNu 10s infinite;
+    animation: bg-animation 10s infinite;
     background-size: 150%;
     padding-top: 13rem;
     padding-bottom: 14rem;
@@ -115,6 +115,14 @@
         z-index: 1;
         bottom: -80px;
         flex-wrap: wrap;
+
+        >img{
+          cursor: pointer;
+
+          &:hover{
+            transform: scale(1.05);
+          }
+        }
       }
     }
   }
