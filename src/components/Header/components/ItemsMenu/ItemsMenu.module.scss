@@ -1,9 +1,11 @@
 .menuHamburguer {
   background: transparent;
   border: none;
+
   @media screen and (min-width: 841px) {
     display: none;
   }
+
   &:before {
     content: "☰";
     display: block;
@@ -11,5 +13,16 @@
     color: #fff;
     margin-left: 30px;
     margin-top: -5px;
+  }
+}
+
+.container {
+  li {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 22px;
+    color: #FFFFFF;
   }
 }

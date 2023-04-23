@@ -1,16 +1,22 @@
 import React from "react";
 
 import { MenuFixed } from "./components/ItemsMenu";
-import {Translate} from "./components/Translate"
+import { Translate } from "./components/Translate";
 
-import styles from "../../styles/Header/Header.module.scss";
+import styles from "./Header.module.scss";
+import Image from "next/image";
 
 export const Header = () => {
   return (
     <header className={styles.sectionHeader}>
       <div className={styles.contentHeader}>
         <section className={styles.logo}>
-          <img src="logo-vtex-freela.svg" />
+          <Image
+            src="/logo-vtex-freela.svg"
+            alt="Logo"
+            width={240}
+            height={40}
+          />
         </section>
         <section className={styles.menu}>
           <MenuFixed />

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Card } from "../../static/methodology";
+import { Card } from "../../static/methodologyList";
 import styles from "./styles.module.scss";
 
-export function Card({ title, img, text1, text2, text3 }: Card) {
+export function MethodologyCard({ title, img, text1, text2, text3 }: Card) {
   return (
     <div className={styles.card}>
       <div>

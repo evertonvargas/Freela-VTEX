@@ -6,7 +6,7 @@ export interface Card{
   text3: string
 }
 
-export const methodology: Card[] = [
+export const methodologyList: Card[] = [
   {
     title: 'Planejamento',
     img: '/planning.svg',

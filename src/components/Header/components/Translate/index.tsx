@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from "../../../../styles/Header/components/Translate.module.scss";
+import styles from "./Translate.module.scss";
 
 export const Translate = () => {
   const [languageIcon, setLanguageIcon] = useState("");
@@ -13,7 +13,7 @@ export const Translate = () => {
   const translateFuction = (data: any) => {
     setLanguageIcon(data);
   };
-  
+
   return (
     <div className={styles.contentTranslate}>
       <select className={styles.itemSelect + languageIcon} name="select">

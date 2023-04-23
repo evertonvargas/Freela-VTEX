@@ -5,6 +5,7 @@
   --green: #04d361;
   --border: #29292e;
   --background-card: #1a1a1c;
+  --black: #000;
 }
 
 * {
@@ -20,9 +21,9 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: var(--white);
+  color: var(--black);
   font-size: 1.4rem;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
   content: "";
   display: block;
   width: 100%;
