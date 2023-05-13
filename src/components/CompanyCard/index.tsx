@@ -25,7 +25,7 @@ export function CompanyCard({
       <div>
         <p>{title}</p>
         <Link href={url} prefetch={false}>
-          Ver website
+          <a target="_blank">Ver Website</a>
         </Link>
       </div>
     </div>

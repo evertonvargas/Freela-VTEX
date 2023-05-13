@@ -10,9 +10,10 @@ import { CompanyCard } from "../components/CompanyCard";
 import { ButtonsContact } from "../components/ButtonsContact";
 import { skillsList } from "../static/skillsList";
 import { SkillCard } from "../components/SkillCard";
-import Image from "next/image";
 import { mainCompaniesList } from "../static/mainCompaniesList";
 import Link from "next/link";
+import { ServiceCard } from "../components/ServiceCard";
+import { Form } from "../components/Form";
 
 const Home: NextPage = () => {
   return (
@@ -33,17 +34,19 @@ const Home: NextPage = () => {
               Data, implementação de layouts, manutenção, evolução da loja,
               técnicas avançadas de SEO e usabilidade.
             </p>
-            <ButtonsContact isColorWhite={true} />
+            <ButtonsContact />
           </div>
           <img
             className={styles.developer}
-            src="/developer.svg"
+            src="/developerv2.svg"
             alt="Desenvolvedor"
           />
           <div className={styles.mainCompanies}>
             {mainCompaniesList.map(({ imgUrl, alt, url }) => (
               <Link href={url} key={alt}>
-                <img src={imgUrl} alt={alt} />
+                <a target="_blank">
+                  <img src={imgUrl} alt={alt} className={alt} />
+                </a>
               </Link>
             ))}
           </div>
@@ -92,23 +95,15 @@ const Home: NextPage = () => {
           ))}
         </div>
       </section>
-      <section className={styles.description}>
-        <div>
-          <img src="/telework.svg" alt="Grupo de pessoas trabalhando" />
-          <div>
-            <h2 className={styles.titleSection}>
-              Somos a melhor opção em equipe freelancer para plataforma{" "}
-              <span>VTEX IO</span>
-            </h2>
-            <p>
-              Garantimos um serviço de qualidade por um preço justo para você
-              dar um up no seu negócio. Oferecemos desenvolvimento, CRO, SEO, UI
-              Design, UX Design e outros serviços para VTEX.
-            </p>
-            <p>Vamos dar start no seu projeto agora mesmo?</p>
-            <ButtonsContact />
-          </div>
-        </div>
+      <section className={styles.services} id="services">
+        <h2 className={styles.titleSection}>
+          Nossos <span>serviços</span>
+        </h2>
+        <p className={styles.paragraphSection}>
+          Vtex Legacy, Faststore ou Vtex IO. As melhores soluções do mercado
+          para todo tipo de negócio.
+        </p>
+        <ServiceCard />
       </section>
       <section className={styles.skills}>
         <h2 className={styles.titleSection}>
@@ -129,6 +124,26 @@ const Home: NextPage = () => {
           ))}
         </div>
       </section>
+      <section className={styles.description}>
+        <div>
+          <img src="/teleworkv2.svg" alt="Grupo de pessoas trabalhando" />
+          <div>
+            <h2 className={styles.titleSection}>
+              Somos a melhor opção em equipe freelancer para plataforma{" "}
+              <span>VTEX</span>
+            </h2>
+            <p>
+              Garantimos um serviço de qualidade por um preço justo para você
+              dar um up no seu negócio. Oferecemos desenvolvimento, CRO, SEO, UI
+              Design, UX Design e outros serviços para VTEX.
+            </p>
+            <p>Vamos dar start no seu projeto agora mesmo?</p>
+            <ButtonsContact />
+            <span id="contact"></span>
+          </div>
+        </div>
+      </section>
+      <Form />
       <Whatsapp />
     </div>
   );

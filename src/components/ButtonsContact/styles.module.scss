@@ -6,13 +6,13 @@
   >button {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 300;
     font-size: 1.8rem;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 8px;
     background: #fff;
-    border: 1px solid #000000;
+    border: 1px solid #fff;
+    font-weight: 600;
     max-width: 204px;
     cursor: pointer;
     width: 100%;
@@ -23,7 +23,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    color: #0F1823;
+    color: #fff;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -34,7 +34,7 @@
       content: "";
       width: 206px;
       height: 1px;
-      background: #000;
+      background: #fff;
       position: absolute;
       bottom: 0;
     }

@@ -1,0 +1,213 @@
+.container {
+  max-width: 1460px;
+  width: 100%;
+  margin: 4.4rem auto 12rem;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  h3,
+  li {
+    font-family: 'Open Sans';
+    color: #000000;
+    line-height: 25px;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin-top: 2.7rem;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+
+  ul {
+    li {
+      font-weight: 300;
+      list-style-position: inside;
+      font-size: 1.6rem;
+    }
+  }
+
+  .positivePoint {
+    list-style-image: url('/bullet-green.svg');
+  }
+
+  .negativePoint {
+    list-style-image: url('/bullet-red.svg');
+  }
+
+  .card {
+    >div:first-child {
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      >h2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .cardLegacy {
+    max-width: 460px;
+    width: 100%;
+    margin-top: 14px;
+
+    >div:first-child {
+      background: linear-gradient(269.2deg, #6C00FF 0.51%, #EB455F 99.32%);
+      border: 1.74459px solid #DFDFDF;
+      border-radius: 16px 0px 0px 0px;
+    }
+
+    >div:last-child {
+      border: 1.74459px solid #F1F1F1;
+      border-radius: 0px 0px 0px 16px;
+      padding: 4.9rem 3rem 7.5rem;
+    }
+  }
+
+  .cardFastStore {
+    max-width: 515px;
+    width: 100%;
+    position: relative;
+
+    >div:first-child {
+      background: linear-gradient(269.71deg, #EB455F 0.4%, #FFB100 20.66%);
+      border: 1.74459px solid #FFFFFF;
+      border-radius: 16px 16px 0px 0px;
+    }
+
+    >div:nth-child(2) {
+      border: 1.74459px solid #F1F1F1;
+      border-radius: 0px 0px 16px 16px;
+      border-top: none;
+      padding: 6.5rem 3rem 9rem;
+    }
+
+    >div:last-child {
+      position: absolute;
+      width: 113px;
+      height: 113px;
+      border-radius: 50%;
+      border: 0.739394px solid #F1F1F1;
+      box-shadow: 0px 5.54545px 11.0909px rgba(0, 0, 0, 0.08);
+      top: 11px;
+      right: 24px;
+      background: #fff;
+
+      >span {
+        animation: rotate 18s linear infinite;
+      }
+
+      &::before {
+        content: "";
+        width: 33.35px;
+        height: 39.34px;
+        background-image: url("/logo-freela-mini.svg");
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .cardVtexIO {
+    max-width: 460px;
+    width: 100%;
+    margin-top: 14px;
+
+    >div:first-child {
+      background: linear-gradient(90deg, #6C00FF 0.51%, #EB455F 99.32%);
+      border: 1.74459px solid #DFDFDF;
+      border-radius: 0px 16px 0px 0px;
+    }
+
+    >div:last-child {
+      border: 1.74459px solid #F1F1F1;
+      border-radius: 0px 0px 0px 16px;
+      padding: 4.9rem 3rem 7.5rem;
+    }
+  }
+}
+
+@media (max-width: 1332px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    .cardVtexIO, .cardLegacy, .cardFastStore{
+      max-width: 515px;
+
+      >div:first-child{
+        border-radius: 16px 16px 0px 0px;
+      }
+
+      >div:nth-child(2)  {
+        padding: 0 2rem 2.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .container{
+    margin-bottom: 6rem;
+    .card {
+      >div:first-child {
+        >h2 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+    .cardVtexIO, .cardLegacy, .cardFastStore{
+      margin-top: 0;
+    }
+
+    .cardFastStore{
+      order: 1;
+    }
+
+    .cardVtexIO{
+      order: 2;
+    } 
+    
+    .cardLegacy{
+      order: 3;
+    } 
+
+    .cardFastStore{
+      >div:last-child {
+        right: 14px;
+      }
+    }
+  } 
+}
+
+@media (max-width: 380px){
+  .container{
+    .cardFastStore{
+      >div:last-child {
+        right: 7px;
+      }
+    }
+  } 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,130 @@
+.footerContainer {
+  >section {
+    background: #FBFAFF;
+    padding-top: 5.6rem;
+    padding-bottom: 7.6rem;
+
+    >div {
+      max-width: 1130px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+
+      >div:first-child {
+        max-width: 333px;
+        width: 100%;
+
+        p {
+          padding-left: 1.4rem;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.6rem;
+
+          &:nth-child(2) {
+            padding-top: 2.5rem;
+            padding-bottom: 3rem;
+          }
+        }
+      }
+
+      .menu,.menu2 {
+        padding-top: 7rem;
+
+        h2 {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.6rem;
+          color: #000000;
+          padding-bottom: 0.9rem;
+        }
+
+        ul {
+          li {
+            margin-bottom: 1rem;
+
+            a {
+              font-family: 'Open Sans';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.6rem;
+              cursor: pointer;  
+            }
+          }
+        }
+      }
+
+      .menu{
+        a{
+          color: #0F1823;
+          border-bottom: 1px solid #0F1823;
+        }
+      }
+
+      .menu2{
+        ul{
+          list-style-type: none;
+
+          li{
+            list-style-position: inside;
+            a{
+              color: #373E46;
+              >span{
+                color: #0F1823;
+              }
+            }
+
+            &:nth-child(1){
+              list-style-image: url('/phone.svg');
+            }
+            &:nth-child(2){
+              list-style-image: url('/whatsappYellow.svg');
+            }
+            &:nth-child(3){
+              list-style-image: url('/envelope.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  >p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 750px){
+  .footerContainer{
+    >section{
+      >div{
+        flex-wrap: wrap;
+
+        >div:first-child {
+          p {
+            padding-left: 0;
+          }
+        }
+
+        .menu,.menu2 {
+          ul {
+            li {
+              a{
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

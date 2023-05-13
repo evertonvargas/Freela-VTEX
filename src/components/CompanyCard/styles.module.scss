@@ -24,6 +24,17 @@
     }
   }
 
+  >div.imgLogo{
+    img{
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
   >div:last-child {
     text-align: center;
     >p {
