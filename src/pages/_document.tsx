@@ -7,18 +7,20 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-            rel="stylesheet"
-          />
           <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
           <meta
             name="description"
-            content="Freelancer VTEX IO e Legacy. Integrações, aplicações no Master Data, implementação de Layout, manutenção, evolução da loja, técnicas avançadas de SEO e usabilidade."
+            content="Freelancer VTEX - VTEX IO e FastStore com qualidade e rapidez. Somos um time qualificado para
+            levar o seu negócio para o próximo level. Migração de Legacy para VTEX IO, integrações, aplicações no Master Data, implementação de layouts, manutenção, evolução da loja, técnicas avançadas de SEO e usabilidade. Somos a melhor opção em equipe freelancer para plataforma VTEX.
+            Garantimos um serviço de qualidade por um preço justo para você dar um up no seu negócio. Oferecemos desenvolvimento, CRO, SEO, UI Design, UX Design e outros serviços para VTEX"
           />
           <meta
             name="keywords"
-            content="VTEXIO, VTEX IO, VtexIo, Vtexio, vtexio, vtex-legacy, VTEX Legacy, vtex legacy, vtexlegacy, VTEX LEGACY, Desenvolvedor Vtex, Front-End Vtex, Front-End VTEXIO, Desenvolvedor VTEXIO, Desenvolvedor Vtex IO, Freelancer Vtex, Freelancer VTEX Legacy, freelancer vtex, freelancer legacy, Freelancer Vtex IO, Freelancer VtexIo, Freelancer VTEXIO, e-commerce vtex, e-commerce vtex, vendas online, site de vendas"
+            content="Freelancer VTEX, desenvolvimento, FastStore, Vtex IO, Vtex Legacy, Desenvolvimento Front-End, Desenvolvimento Back-End, CRO, desenvolvimento vtex, UX Design, UI Design, SEO, Aplicações no Master Data, time qualificado, Migração de Legacy,VTEX IO, Integrações, Aplicações no Master Data, Implementação de layouts, Manutenção, Evolução da loja, Técnicas avançadas de SEO, Usabilidade"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
           />
           <meta name="robots" content="index"></meta>
         </Head>

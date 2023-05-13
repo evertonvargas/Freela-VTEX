@@ -25,10 +25,10 @@ const Home: NextPage = () => {
         <div>
           <div className={styles.content}>
             <h1>VTEX IO e FastStore com qualidade e rapidez</h1>
-            <h3>
+            <h2>
               Somos um time qualificado para
               <br /> levar o seu negócio para o próximo level
-            </h3>
+            </h2>
             <p>
               Migração de Legacy para VTEX IO, integrações, aplicações no Master
               Data, implementação de layouts, manutenção, evolução da loja,
@@ -53,9 +53,9 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className={styles.methodology}>
-        <h2 className={styles.titleSection}>
+        <h3 className={styles.titleSection}>
           Nossa metodologia de <span>trabalho</span>
-        </h2>
+        </h3>
         <p className={styles.paragraphSection}>
           Combinamos 04 etapas para ajudar o seu negócio a decolar ainda mais
           rápido
@@ -74,9 +74,9 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className={styles.companies}>
-        <h2 className={styles.titleSection}>
+        <h3 className={styles.titleSection}>
           Empresas que <span>confiam</span> na gente
-        </h2>
+        </h3>
         <p className={styles.paragraphSection}>
           Com nosso time seu projeto está em boas mãos
         </p>
@@ -96,9 +96,9 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className={styles.services} id="services">
-        <h2 className={styles.titleSection}>
+        <h3 className={styles.titleSection}>
           Nossos <span>serviços</span>
-        </h2>
+        </h3>
         <p className={styles.paragraphSection}>
           Vtex Legacy, Faststore ou Vtex IO. As melhores soluções do mercado
           para todo tipo de negócio.
@@ -106,9 +106,9 @@ const Home: NextPage = () => {
         <ServiceCard />
       </section>
       <section className={styles.skills}>
-        <h2 className={styles.titleSection}>
+        <h3 className={styles.titleSection}>
           Principais skills do <span>nosso time</span>
-        </h2>
+        </h3>
         <p className={styles.paragraphSection}>
           As melhores práticas e entregáveis de valor para o seu negócio
         </p>

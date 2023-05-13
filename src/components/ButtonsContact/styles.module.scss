@@ -3,22 +3,24 @@
   flex-direction: column;
   gap: 1.5rem;
 
-  >button {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-size: 1.8rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 8px;
-    background: #fff;
-    border: 1px solid #fff;
-    font-weight: 600;
-    max-width: 204px;
-    cursor: pointer;
-    width: 100%;
+  a:first-child{
+    >button {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-size: 1.8rem;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid #fff;
+      font-weight: 600;
+      max-width: 204px;
+      cursor: pointer;
+      width: 100%;
+    }
   }
 
-  a {
+  a:last-child {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;

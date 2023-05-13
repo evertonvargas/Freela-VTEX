@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://freelavtex.com/sitemap.xml
+
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Mediapartners-Google
+User-agent: Adsbot-Google
+

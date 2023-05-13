@@ -1,6 +1,7 @@
 import Image from "next/image";
 interface FooterProps {}
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 export function Footer({}: FooterProps) {
   return (
@@ -22,21 +23,27 @@ export function Footer({}: FooterProps) {
             <p>Que tal começar seu projeto hoje mesmo?</p>
           </div>
           <div className={styles.menu}>
-            <h2>Sitemap</h2>
+            <h3>Sitemap</h3>
             <ul>
               <li>
-                <a href="">Home</a>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
               </li>
               <li>
-                <a href="#services">Serviços</a>
+                <Link href="#services">
+                  <a>Serviços</a>
+                </Link>
               </li>
               <li>
-                <a href="#contact">Contatos</a>
+                <Link href="#contact">
+                  <a>Serviços</a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className={styles.menu2}>
-            <h2>Entre em contato</h2>
+            <h3>Entre em contato</h3>
             <ul>
               <li>
                 <a href="tel:+5548991320628" target="_blank" rel="noreferrer">

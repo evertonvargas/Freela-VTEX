@@ -60,9 +60,9 @@ export function Form({}: FormProps) {
   return (
     <section className={styles.container}>
       <div className={styles.formContainer}>
-        <h2 className={styles.titleSection}>
+        <h3 className={styles.titleSection}>
           Fale Conosco <span>agora mesmo</span>
-        </h2>
+        </h3>
         <p className={styles.paragraphSection}>
           Preencha o formulário ou se precisar de um atendimento mais rápido,
           fale com nosso time via WhatsApp.

@@ -17,7 +17,7 @@ export function CompanyCard({
     <div className={styles.container}>
       <div>
         <Image src={flag} alt={altFlag} width={25} height={25} />
-        <h2>{category}</h2>
+        <h3>{category}</h3>
       </div>
       <div className={styles.imgLogo}>
         <img src={img} alt={altImg} />

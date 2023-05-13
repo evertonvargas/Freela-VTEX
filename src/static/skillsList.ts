@@ -28,18 +28,18 @@ export const skillsList: SkilsProps[] = [
     img: "/frontend.svg",
     imgGradient: "/frontendgradient.svg",
     title: "Desenvolvimento Front-End",
-    description: "Nossos programadores utilizam todas as linguagem utilizadas no mercado para que você tenha a melhor solução ao seu dispor."
+    description: "Criação de interfaces funcionais e responsivas para e-commerce, garantindo uma experiência moderna e envolvente aos usuários."
   },
   {
     img: "/backend.svg",
     imgGradient: "/backendgradient.svg",
     title: "Desenvolvimento Back-End",
-    description: "Todo nosso processo de criação é baseado em human centered design, incluindo boas práticas de usabilidade e pesquisa de mercado."
+    description: "Sistemas seguros e escaláveis, com alta performance e confiabilidade, utilizando tecnologias avançadas. Integramos com APIs e sistemas de terceiros."
   },
   {
     img: "/cro.svg",
     imgGradient: "/crogradient.svg",
     title: "CRO",
-    description: "Posicionamos seu negócio da melhor maneira para buscadores como Google, Bing, aumentando o acesso orgânico na web."
+    description: "Usamos ferramentas de análise de dados para otimizar a conversão de visitantes em clientes, identificando e solucionando problemas.."
   },
 ]
