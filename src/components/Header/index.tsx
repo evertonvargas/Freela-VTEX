@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
 import Image from "next/image";
@@ -29,6 +29,7 @@ export const Header = () => {
           <div onClick={() => setMenu(!menu)} className={styles.backdrop}></div>
         )}
         <div
+          onClick={() => setMenu(!menu)}
           className={
             menu ? `${styles.menuSection} ${styles.on}` : styles.menuSection
           }

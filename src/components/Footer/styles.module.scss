@@ -17,7 +17,6 @@
         width: 100%;
 
         p {
-          padding-left: 1.4rem;
           font-family: 'Open Sans';
           font-style: normal;
           font-weight: 300;
@@ -30,7 +29,8 @@
         }
       }
 
-      .menu,.menu2 {
+      .menu,
+      .menu2 {
         padding-top: 7rem;
 
         h3 {
@@ -45,45 +45,53 @@
         ul {
           li {
             margin-bottom: 1rem;
-
-            a {
-              font-family: 'Open Sans';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 1.6rem;
-              cursor: pointer;  
-            }
           }
         }
       }
 
-      .menu{
-        a{
+      .menu {
+        a {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.6rem;
+          cursor: pointer;
           color: #0F1823;
           border-bottom: 1px solid #0F1823;
+
+          &:hover{
+            color: #800eda;
+            border-bottom: 1px solid #800eda;
+          }
         }
       }
 
-      .menu2{
-        ul{
+      .menu2 {
+        ul {
           list-style-type: none;
 
-          li{
+          li {
             list-style-position: inside;
-            a{
-              color: #373E46;
-              >span{
-                color: #0F1823;
-              }
+            color: #373E46;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            cursor: default;
+
+            >span {
+              color: #0F1823;
             }
 
-            &:nth-child(1){
+            &:nth-child(1) {
               list-style-image: url('/phone.svg');
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
               list-style-image: url('/whatsappYellow.svg');
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
               list-style-image: url('/envelope.svg');
             }
           }
@@ -103,22 +111,26 @@
   }
 }
 
-@media (max-width: 750px){
-  .footerContainer{
-    >section{
-      >div{
+@media (max-width: 750px) {
+  .footerContainer {
+    >section {
+      >div {
         flex-wrap: wrap;
 
         >div:first-child {
+          max-width: unset;
+
           p {
             padding-left: 0;
           }
         }
 
-        .menu,.menu2 {
+        .menu,
+        .menu2 {
+          padding-top: 5rem;
           ul {
             li {
-              a{
+              a {
                 font-size: 1.4rem;
               }
             }

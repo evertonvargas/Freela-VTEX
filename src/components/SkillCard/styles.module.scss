@@ -4,6 +4,11 @@
   flex-direction: column;
   align-items: center;
 
+  img{
+    max-height: 113px;
+    height: 100%;
+  }
+
   >h2 {
     font-family: 'Open Sans';
     font-style: normal;

@@ -2,6 +2,7 @@ import Image from "next/image";
 interface FooterProps {}
 import styles from "./styles.module.scss";
 import Link from "next/link";
+import { sitemap } from "../../static/sitemap";
 
 export function Footer({}: FooterProps) {
   return (
@@ -25,48 +26,26 @@ export function Footer({}: FooterProps) {
           <div className={styles.menu}>
             <h3>Sitemap</h3>
             <ul>
-              <li>
-                <Link href="/">
-                  <a>Home</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#services">
-                  <a>Serviços</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#contact">
-                  <a>Serviços</a>
-                </Link>
-              </li>
+              {sitemap.map(({ href, title }) => (
+                <li key={title}>
+                  <Link href={href}>
+                    <a>{title}</a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className={styles.menu2}>
             <h3>Entre em contato</h3>
             <ul>
               <li>
-                <a href="tel:+5548991320628" target="_blank" rel="noreferrer">
-                  <span>Telefone:</span> +55 48 99132-0628
-                </a>
+                <span>Telefone:</span> +55 16 99950-0046
               </li>
               <li>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5516999500046&text=Ol%C3%A1%2C%20vim%20pelo%20site%3A%20freelavtex.com.br"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>Whatsapp:</span> +55 48 99132-0628
-                </a>
+                <span>Whatsapp:</span> +55 16 99950-0046
               </li>
               <li>
-                <a
-                  href="mailto:freelavtex@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>E-mail:</span> freelavtex@gmail.com
-                </a>
+                <span>E-mail:</span> freelavtex@gmail.com
               </li>
             </ul>
           </div>

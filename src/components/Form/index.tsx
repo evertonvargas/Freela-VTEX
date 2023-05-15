@@ -1,7 +1,7 @@
 interface FormProps {}
 import styles from "./styles.module.scss";
 import { useFormik } from "formik";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
@@ -25,6 +25,7 @@ const validationSchema = yup.object().shape({
 
 export function Form({}: FormProps) {
   const form = useRef<any>();
+  const [src, setSrc] = useState("/whatsappBlack.svg");
 
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     useFormik({
@@ -197,18 +198,19 @@ export function Form({}: FormProps) {
       </div>
       <p>
         Prefere um atendimento mais rápido?
-        <a href="https://api.whatsapp.com/send?phone=5516999500046&text=Ol%C3%A1%2C%20vim%20pelo%20site%3A%20freelavtex.com.br">
-          Chame no
-          <Image
-            src={"/whatsappBlack.svg"}
-            alt="Logo Whatsapp"
-            width={14}
-            height={18}
-          />
-          Whatsapp
-        </a>
-        ou
-        <a href="https://calendly.com/freelavtex/60min">Agende uma reunião</a>
+        <span>
+          <a
+            href="https://api.whatsapp.com/send?phone=5516999500046&text=Ol%C3%A1%2C%20vim%20pelo%20site%3A%20freelavtex.com.br"
+            onMouseOver={() => setSrc("/whatsappPurple.svg")}
+            onMouseOut={() => setSrc("/whatsappBlack.svg")}
+          >
+            Chame no
+            <Image src={src} alt="Logo Whatsapp" width={14} height={18} />
+            Whatsapp
+          </a>
+          ou
+          <a href="https://calendly.com/freelavtex/60min">Agende uma reunião</a>
+        </span>
       </p>
     </section>
   );

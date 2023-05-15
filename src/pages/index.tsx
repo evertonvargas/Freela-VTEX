@@ -19,7 +19,10 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Freelancer VTEX</title>
+        <title>
+          FreelaVTEX: Freelancers qualificados para aprimorar seu e-commerce
+          VTEX
+        </title>
       </Head>
       <section className={styles.introduction}>
         <div>

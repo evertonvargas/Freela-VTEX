@@ -10,51 +10,6 @@ export interface CompaniesProps{
 
 export const companiesList: CompaniesProps[] = [
   {
-    flag: "/flagBrasil.svg",
-    altFlag: "Bandeira do Brasil",
-    category: "Moda",
-    img: "/wollner.png",
-    altImg: "Loja Wollner",
-    title: "Desenvolvimento Vtex IO",
-    url: "https://www.wollner.com.br"
-  },
-  {
-    flag: "/flagBrasil.svg",
-    altFlag: "Bandeira do Brasil",
-    category: "Moda",
-    img: "/florest.png",
-    altImg: "Loja Florest",
-    title: "Desenvolvimento Vtex IO",
-    url: "https://www.florestoficial.com.br"
-  },
-  {
-    flag: "/flagBrasil.svg",
-    altFlag: "Bandeira do Brasil",
-    category: "Móveis",
-    img: "/onegoods.png",
-    altImg: "Loja OneGoods",
-    title: "Desenvolvimento Vtex IO",
-    url: "https://www.onegoods.com.br"
-  },
-  {
-    flag: "/flagBrasil.svg",
-    altFlag: "Bandeira do Brasil",
-    category: "Decoração",
-    img: "/aladim.png",
-    altImg: "Loja Aladim",
-    title: "Desenvolvimento Vtex IO",
-    url: "https://www.aladimdecor.com.br"
-  },
-  {
-    flag: "/flagArgentina.svg",
-    altFlag: "Bandeira da Argentina",
-    category: "Construção",
-    img: "/prestigio.png",
-    altImg: "Loja Prestigio",
-    title: "Desenvolvimento Vtex IO",
-    url: "https://www.prestigio.com.ar"
-  },
-  {
     flag: "/flagArgentina.svg",
     altFlag: "Bandeira da Argentina",
     category: "Eletrônicos",
@@ -99,4 +54,49 @@ export const companiesList: CompaniesProps[] = [
     title: "Desenvolvimento Vtex IO",
     url: "https://www.cafemartinez.com"
   },
+  {
+    flag: "/flagBrasil.svg",
+    altFlag: "Bandeira do Brasil",
+    category: "Moda",
+    img: "/wollner.png",
+    altImg: "Loja Wollner",
+    title: "Desenvolvimento Legacy",
+    url: "https://www.wollner.com.br"
+  },
+  {
+    flag: "/flagBrasil.svg",
+    altFlag: "Bandeira do Brasil",
+    category: "Moda",
+    img: "/florest.png",
+    altImg: "Loja Florest",
+    title: "Desenvolvimento Legacy",
+    url: "https://www.florestoficial.com.br"
+  },
+  {
+    flag: "/flagBrasil.svg",
+    altFlag: "Bandeira do Brasil",
+    category: "Móveis",
+    img: "/onegoods.png",
+    altImg: "Loja OneGoods",
+    title: "Desenvolvimento Legacy",
+    url: "https://www.onegoods.com.br"
+  },
+  {
+    flag: "/flagBrasil.svg",
+    altFlag: "Bandeira do Brasil",
+    category: "Decoração",
+    img: "/aladim.png",
+    altImg: "Loja Aladim",
+    title: "Desenvolvimento Legacy",
+    url: "https://www.aladimdecor.com.br"
+  },
+  {
+    flag: "/flagArgentina.svg",
+    altFlag: "Bandeira da Argentina",
+    category: "Construção",
+    img: "/prestigio.png",
+    altImg: "Loja Prestigio",
+    title: "Desenvolvimento Legacy",
+    url: "https://www.prestigio.com.ar"
+  }
 ]

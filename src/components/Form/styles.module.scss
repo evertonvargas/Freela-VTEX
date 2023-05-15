@@ -1,5 +1,7 @@
 .container {
   margin-bottom: 5rem;
+  padding: 1rem;
+
   .formContainer {
     background: #FFFFFF;
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.16);
@@ -57,7 +59,6 @@
       .separateTwoColumns {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
         gap: 16px;
         margin-top: 2.3rem;
       }
@@ -123,7 +124,7 @@
         justify-content: flex-end;
 
         button {
-          background: linear-gradient(269.71deg, #EB455F 0.4%, #FFB100 20.66%);
+          background: linear-gradient(140deg, #ffb100, #eb455f, #800eda 140%);
           backdrop-filter: blur(50px);
           border-radius: 8px;
           font-family: 'Open Sans';
@@ -146,48 +147,67 @@
     font-size: 1.6rem;
     color: #000000;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 8px;
 
-    >a {
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.6rem;
-      color: #0F1823;
+    >span {
       display: flex;
       align-items: center;
-      cursor: pointer;
-      border-bottom: 2px solid #0F1823;
+      justify-content: center;
+      gap: 8px;
 
-      >span{
-        padding: 0 8px !important;
+      >a {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #0F1823;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 2px solid #0F1823;
+
+        &:hover{
+          color: #800eda;
+          border-bottom: 2px solid #800eda;
+        }
+
+        >span {
+          padding: 0 8px !important;
+        }
       }
     }
   }
 }
 
-@media (max-width: 700px){
-  .container{
-    .formContainer{
-      padding: 4rem 1.5rem;
-      .titleSection{
+@media (max-width: 700px) {
+  .container {
+    .formContainer {
+      padding: 4rem 2rem;
+
+      .titleSection {
         font-size: 2.2rem;
       }
 
-      form{
+      form {
         .separateTwoColumns {
           flex-direction: column;
         }
 
-        label{
+        label {
           width: 100%;
         }
       }
     }
-    >p{
+
+    >p {
       flex-direction: column;
+
+      >span{
+        >a{
+          font-size: clamp(1.2rem, 3.7vw, 1.6rem);
+        }
+      }
     }
   }
 }
