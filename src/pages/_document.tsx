@@ -18,6 +18,10 @@ export default class MyDocument extends Document {
             name="keywords"
             content="Freelancer VTEX, desenvolvimento, FastStore, Vtex IO, Vtex Legacy, Desenvolvimento Front-End, Desenvolvimento Back-End, CRO, desenvolvimento vtex, UX Design, UI Design, SEO, Aplicações no Master Data, time qualificado, Migração de Legacy,VTEX IO, Integrações, Aplicações no Master Data, Implementação de layouts, Manutenção, Evolução da loja, Técnicas avançadas de SEO, Usabilidade"
           />
+          <meta
+            name="google-site-verification"
+            content="Q4sXoa3njKtlWdV4lFbZfvYN9KgGgXHL_DoXZeNBCBY"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
             rel="stylesheet"
