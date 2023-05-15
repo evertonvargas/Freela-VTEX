@@ -19,10 +19,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>
-          FreelaVTEX: Freelancers qualificados para aprimorar seu e-commerce
-          VTEX
-        </title>
+        <title>Freelancer VTEX - Desenvolvedores VTEX</title>
       </Head>
       <section className={styles.introduction}>
         <div>
@@ -47,7 +44,7 @@ const Home: NextPage = () => {
           <div className={styles.mainCompanies}>
             {mainCompaniesList.map(({ imgUrl, alt, url }) => (
               <Link href={url} key={alt}>
-                <a target="_blank">
+                <a target="_blank" rel="noopener">
                   <img src={imgUrl} alt={alt} className={alt} />
                 </a>
               </Link>
