@@ -51,5 +51,18 @@
   .container {
     align-items: center;
     gap: 1rem;
+
+    a{
+      &:first-child{
+        font-size: 1.4rem;
+      }
+
+      &:last-child{
+        font-size: 14px;
+        &::after{
+          width: 184px;
+        }
+      }
+    }
   }
 }

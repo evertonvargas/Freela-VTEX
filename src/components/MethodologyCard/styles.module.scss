@@ -53,3 +53,14 @@
     }
   }
 }
+
+@media (max-width: 500px){
+  .card{
+    >div{
+      >h3{        
+        font-size: 2rem;
+        padding-top: 5px;
+      }
+    }
+  }
+}

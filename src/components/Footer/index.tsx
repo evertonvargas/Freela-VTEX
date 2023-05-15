@@ -17,9 +17,8 @@ export function Footer({}: FooterProps) {
               height={48}
             />
             <p>
-              Olá, somos um time multidisciplinar com experiência com mais de 5
-              anos de experiência em VTEX, Shopify, LI, Wordpress, entre outras
-              plataformas.
+              Olá, somos um time multidisciplinar com mais de 5 anos de
+              experiência em VTEX, Shopify, Wordpress, entre outras plataformas.
             </p>
             <p>Que tal começar seu projeto hoje mesmo?</p>
           </div>
