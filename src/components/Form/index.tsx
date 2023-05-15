@@ -26,12 +26,12 @@ const validationSchema = yup.object().shape({
 export function Form({}: FormProps) {
   const form = useRef<any>();
   const [src, setSrc] = useState("/whatsappBlack.svg");
+  const [loading, setLoading] = useState(false);
 
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     useFormik({
-      onSubmit: (values) => {
-        console.log(values, "values");
-        console.log(form.current, "form.current");
+      onSubmit: (values, { resetForm }) => {
+        setLoading(true);
         emailjs
           .sendForm(
             YOUR_SERVICE_ID,
@@ -41,12 +41,16 @@ export function Form({}: FormProps) {
           )
           .then(
             (result) => {
-              console.log("result", result.text);
+              console.log("e-mail enviado com sucesso", result.text);
             },
             (error) => {
               console.log(error.text);
             }
-          );
+          )
+          .finally(() => {
+            setLoading(false);
+            resetForm();
+          });
       },
       validationSchema,
       initialValues: {
@@ -192,7 +196,9 @@ export function Form({}: FormProps) {
             ) : null}
           </label>
           <div className={styles.buttonSubmit}>
-            <button type="submit">Enviar mensagem</button>
+            <button type="submit">
+              {loading ? "Enviando..." : "Enviar mensagem"}
+            </button>
           </div>
         </form>
       </div>
