@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-          <link rel="canonical" href="https://freelavtex.com/"></link>
           <meta
             name="description"
             content="Migração de Legacy para VTEX IO, FastStore, integrações, aplicações no Master Data, implementação de layouts, manutenção, evolução da loja, técnicas avançadas de SEO e usabilidade."
